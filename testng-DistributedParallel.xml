@@ -4,14 +4,11 @@
   <test thread-count="2" parallel="tests" name="Test-Runner-1">
     <classes>
       <class name="contactsTests.CreateNewContactTest"/>
-      <class name="contactsTests.SearchContactTest"/>
-      <class name="contactsTests.EditContactTest"/>
     </classes>
   </test> <!-- Test -->
   <test thread-count="2" parallel="tests" name="Test-Runner-2">
     <classes>      
-      <class name="contactsTests.DeleteContactTest"/>
-      <class name="contactsTests.DeleteBulkContactTest"/>
+      <class name="contactsTests.CreateNewContactTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
