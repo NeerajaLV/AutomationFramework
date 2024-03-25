@@ -47,6 +47,8 @@ public class SearchContactTest extends BaseClass{
 		int conCount = cp.getContactCountSize()-1;
 		Assert.assertTrue(conCount>=1, "No contact found with lastname "+LASTNAME+"\n");
 		System.out.println("Search successful..!!\n"+conCount+" contacts found with lastname "+LASTNAME);
+		Thread.sleep(1000);
+		hp.clickOnContactsLink();
 		cp.deleteAllByConfirming(driver);
 	}
 }

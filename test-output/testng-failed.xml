@@ -3,17 +3,18 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="contactsTests.DeleteBulkContactTest">
+      <class name="contactsTests.SearchContactTest">
         <methods>
           <include name="amConfig"/>
           <include name="bmConfig"/>
           <include name="bcConfig"/>
           <include name="afterSuite"/>
           <include name="acConfig"/>
+          <include name="searchContact1"/>
           <include name="bsConfig"/>
-          <include name="deleteBulkContact2"/>
+          <include name="searchContact2"/>
         </methods>
-      </class> <!-- contactsTests.DeleteBulkContactTest -->
+      </class> <!-- contactsTests.SearchContactTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
