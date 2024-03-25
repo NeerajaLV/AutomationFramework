@@ -39,7 +39,7 @@ public class DeleteBulkContactTest extends BaseClass{
 //		Thread.sleep(2000);
 //		int afterConCount = cp.getContactCountSize()-1;
 //		System.out.println("Total contact count after search & deletion operation: "+afterConCount);
-//		Thread.sleep(1000);
+//		Thread.sleep(2000);
 //		Assert.assertEquals(afterConCount, beforeConCount-conCount,"Delete operation of bulk contacts failed on contact with lastname "+LASTNAME+"\n");
 //		System.out.println("Bulk deletion of contact "+LASTNAME+" completed successfully");
 //	}
@@ -74,7 +74,7 @@ public class DeleteBulkContactTest extends BaseClass{
 		Thread.sleep(2000);
 		int afterConCount = cp.getContactCountSize()-1;
 		System.out.println("Total contact count after search & deletion operation: "+afterConCount);
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		Assert.assertEquals(afterConCount, beforeConCount-conCount,"Delete operation of bulk contacts failed on contact with lastname "+LASTNAME+"\n");
 		System.out.println("Bulk deletion of contact "+LASTNAME+" completed successfully");
 	}

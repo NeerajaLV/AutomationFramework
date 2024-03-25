@@ -4,11 +4,6 @@
   <artifactId>AdvanceSelenium</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>AdvanceSelenium</name>
- 
- <properties>
- <maven.compiler.source>1.8</maven.compiler.source>
- <maven.compiler.target>1.8</maven.compiler.target>
-</properties>
 
   <dependencies>
   <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
@@ -61,7 +56,18 @@
     <scope>provided</scope>
 </dependency>
 </dependencies>
-
+<build>
+    <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <configuration>
+                <source>1.8</source>
+                <target>1.8</target>
+            </configuration>
+        </plugin>
+    </plugins>
+</build>
 <profiles>
 	<profile>
 		<id>smoke</id>

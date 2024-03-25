@@ -41,6 +41,7 @@ public class DeleteContactTest extends BaseClass{
 		//Step-8: Verify for contact deletion
 		int afterConCount = cp.getContactCountSize()-1;
 		System.out.println("Total contact count after search & deletion operation: "+afterConCount);
+		Thread.sleep(2000);
 		Assert.assertEquals(afterConCount, beforeConCount-1, "Delete operation failed on contact with lastname "+LASTNAME+"\n");
 		System.out.println("Contact "+LASTNAME+" deleted successfully");
 	}
@@ -74,6 +75,7 @@ public class DeleteContactTest extends BaseClass{
 //		//Step-8: Verify for contact deletion
 //		int afterConCount = cp.getContactCountSize()-1;
 //		System.out.println("Total contact count after search & deletion operation: "+afterConCount);
+//		Thread.sleep(2000);	
 //		Assert.assertEquals(afterConCount, beforeConCount-1, "Delete operation failed on contact with lastname "+LASTNAME+"\n");
 //		System.out.println("Contact "+LASTNAME+" deleted successfully");
 //	}
