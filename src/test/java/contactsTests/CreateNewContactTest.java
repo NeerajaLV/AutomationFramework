@@ -16,7 +16,7 @@ import objectRepository.HomePage;
 public class CreateNewContactTest extends BaseClass{
 	@Test(groups={"SmokeSuite","RegressionSuite"},invocationCount=3, retryAnalyzer = genericUtilities.RetryAnalyzerImplementation.class)
 	public void createContactWithMandatoryDetails1()throws Throwable, IOException {
-		
+		System.out.println("SCM Test");
 		//Read test data - Excel file
 		String LASTNAME=eUtil.readDataFromExcelFile("Contacts", 1, 2);	
 		
