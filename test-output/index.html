@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,26 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">11 methods, 2 failed,   9 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="contactsTests.DeleteBulkContactTest" class="method navigator-link" hash-for-method="deleteBulkContact2">deleteBulkContact2</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="contactsTests.DeleteContactTest" class="method navigator-link" hash-for-method="deleteCreatedContact1">deleteCreatedContact1</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    <span class="method-stats">11 methods,   11 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -153,6 +134,16 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="contactsTests.DeleteBulkContactTest" class="method navigator-link" hash-for-method="deleteBulkContact2">deleteBulkContact2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="contactsTests.DeleteContactTest" class="method navigator-link" hash-for-method="deleteCreatedContact1">deleteCreatedContact1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="contactsTests.EditContactTest" class="method navigator-link" hash-for-method="editCreatedContactWithRequiredDetails">editCreatedContactWithRequiredDetails</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -178,48 +169,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">contactsTests.DeleteContactTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="deleteCreatedContact1">
-                  </a> <!-- deleteCreatedContact1 -->
-                  <span class="method-name">deleteCreatedContact1</span>
-                  <div class="stack-trace">java.lang.AssertionError: Delete operation failed on contact with lastname Chaithra
- expected [19] but found [20]
-	at contactsTests.DeleteContactTest.deleteCreatedContact1(DeleteContactTest.java:44)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">contactsTests.DeleteBulkContactTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="deleteBulkContact2">
-                  </a> <!-- deleteBulkContact2 -->
-                  <span class="method-name">deleteBulkContact2</span>
-                  <div class="stack-trace">java.lang.AssertionError: Delete operation of bulk contacts failed on contact with lastname Neeraja
- expected [10] but found [20]
-	at contactsTests.DeleteBulkContactTest.deleteBulkContact2(DeleteBulkContactTest.java:78)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -281,6 +230,36 @@
                   <a name="createContactWithMandatoryDetails2">
                   </a> <!-- createContactWithMandatoryDetails2 -->
                   <span class="method-name">createContactWithMandatoryDetails2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">contactsTests.DeleteContactTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteCreatedContact1">
+                  </a> <!-- deleteCreatedContact1 -->
+                  <span class="method-name">deleteCreatedContact1</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">contactsTests.DeleteBulkContactTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteBulkContact2">
+                  </a> <!-- deleteBulkContact2 -->
+                  <span class="method-name">deleteBulkContact2</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -439,54 +418,54 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(11);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'createContactWithMandatoryDetails1')
-data.setCell(0, 2, 'contactsTests.CreateNewContactTest')
-data.setCell(0, 3, 30087);
+data.setCell(0, 1, 'editCreatedContactWithRequiredDetails')
+data.setCell(0, 2, 'contactsTests.EditContactTest')
+data.setCell(0, 3, 15772);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'createContactWithMandatoryDetails1')
-data.setCell(1, 2, 'contactsTests.CreateNewContactTest')
-data.setCell(1, 3, 21587);
+data.setCell(1, 1, 'deleteBulkContact2')
+data.setCell(1, 2, 'contactsTests.DeleteBulkContactTest')
+data.setCell(1, 3, 15149);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'createContactWithMandatoryDetails1')
-data.setCell(2, 2, 'contactsTests.CreateNewContactTest')
-data.setCell(2, 3, 19839);
+data.setCell(2, 1, 'deleteCreatedContact1')
+data.setCell(2, 2, 'contactsTests.DeleteContactTest')
+data.setCell(2, 3, 13643);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'deleteBulkContact2')
-data.setCell(3, 2, 'contactsTests.DeleteBulkContactTest')
-data.setCell(3, 3, 17948);
+data.setCell(3, 1, 'createContactWithMandatoryDetails2')
+data.setCell(3, 2, 'contactsTests.CreateNewContactTest')
+data.setCell(3, 3, 9050);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'editCreatedContactWithRequiredDetails')
-data.setCell(4, 2, 'contactsTests.EditContactTest')
-data.setCell(4, 3, 16651);
+data.setCell(4, 1, 'createContactWithMandatoryDetails1')
+data.setCell(4, 2, 'contactsTests.CreateNewContactTest')
+data.setCell(4, 3, 8725);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'deleteCreatedContact1')
-data.setCell(5, 2, 'contactsTests.DeleteContactTest')
-data.setCell(5, 3, 12555);
+data.setCell(5, 1, 'createContactWithMandatoryDetails2')
+data.setCell(5, 2, 'contactsTests.CreateNewContactTest')
+data.setCell(5, 3, 8708);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'createContactWithMandatoryDetails2')
-data.setCell(6, 2, 'contactsTests.CreateNewContactTest')
-data.setCell(6, 3, 12262);
+data.setCell(6, 1, 'searchContact1')
+data.setCell(6, 2, 'contactsTests.SearchContactTest')
+data.setCell(6, 3, 8339);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'createContactWithMandatoryDetails2')
 data.setCell(7, 2, 'contactsTests.CreateNewContactTest')
-data.setCell(7, 3, 10043);
+data.setCell(7, 3, 8252);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'searchContact2')
 data.setCell(8, 2, 'contactsTests.SearchContactTest')
-data.setCell(8, 3, 9531);
+data.setCell(8, 3, 8162);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'createContactWithMandatoryDetails2')
+data.setCell(9, 1, 'createContactWithMandatoryDetails1')
 data.setCell(9, 2, 'contactsTests.CreateNewContactTest')
-data.setCell(9, 3, 9138);
+data.setCell(9, 3, 8104);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'searchContact1')
-data.setCell(10, 2, 'contactsTests.SearchContactTest')
-data.setCell(10, 3, 7738);
+data.setCell(10, 1, 'createContactWithMandatoryDetails1')
+data.setCell(10, 2, 'contactsTests.CreateNewContactTest')
+data.setCell(10, 3, 8022);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -555,198 +534,194 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
                 <span class="method-name">bcConfig</span>
-                <span class="method-start">376 ms</span>
+                <span class="method-start">709 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">bmConfig</span>
-                <span class="method-start">9290 ms</span>
+                <span class="method-start">7557 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">createContactWithMandatoryDetails1</span>
-                <span class="method-start">16908 ms</span>
+                <span class="method-start">10507 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">amConfig</span>
-                <span class="method-start">47010 ms</span>
+                <span class="method-start">19248 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">bmConfig</span>
-                <span class="method-start">49853 ms</span>
+                <span class="method-start">21894 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">createContactWithMandatoryDetails1</span>
-                <span class="method-start">52417 ms</span>
+                <span class="method-start">24047 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">amConfig</span>
-                <span class="method-start">74004 ms</span>
+                <span class="method-start">32069 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">bmConfig</span>
-                <span class="method-start">78873 ms</span>
+                <span class="method-start">34346 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">createContactWithMandatoryDetails1</span>
-                <span class="method-start">85522 ms</span>
+                <span class="method-start">36720 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">amConfig</span>
-                <span class="method-start">105361 ms</span>
+                <span class="method-start">44824 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">bmConfig</span>
-                <span class="method-start">107626 ms</span>
+                <span class="method-start">47132 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">createContactWithMandatoryDetails2</span>
-                <span class="method-start">109587 ms</span>
+                <span class="method-start">49155 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">amConfig</span>
-                <span class="method-start">118725 ms</span>
+                <span class="method-start">57427 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">bmConfig</span>
-                <span class="method-start">121188 ms</span>
+                <span class="method-start">59688 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">createContactWithMandatoryDetails2</span>
-                <span class="method-start">123044 ms</span>
+                <span class="method-start">61719 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">amConfig</span>
-                <span class="method-start">135306 ms</span>
+                <span class="method-start">70783 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">bmConfig</span>
-                <span class="method-start">137639 ms</span>
+                <span class="method-start">73093 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">createContactWithMandatoryDetails2</span>
-                <span class="method-start">139721 ms</span>
+                <span class="method-start">75298 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">amConfig</span>
-                <span class="method-start">149766 ms</span>
+                <span class="method-start">84006 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">acConfig</span>
-                <span class="method-start">152024 ms</span>
+                <span class="method-start">86272 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">contactsTests.DeleteBulkContactTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">bcConfig</span>
-                <span class="method-start">152619 ms</span>
+                <span class="method-start">86758 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">bmConfig</span>
-                <span class="method-start">156196 ms</span>
+                <span class="method-start">89980 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">deleteBulkContact2</span>
-                <span class="method-start">159778 ms</span>
+                <span class="method-start">92628 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">amConfig</span>
-                <span class="method-start">178024 ms</span>
+                <span class="method-start">107777 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">acConfig</span>
-                <span class="method-start">180817 ms</span>
+                <span class="method-start">111334 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">contactsTests.DeleteContactTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">bcConfig</span>
-                <span class="method-start">181212 ms</span>
+                <span class="method-start">111786 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">bmConfig</span>
-                <span class="method-start">184240 ms</span>
+                <span class="method-start">115037 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">deleteCreatedContact1</span>
-                <span class="method-start">187154 ms</span>
+                <span class="method-start">118160 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">amConfig</span>
-                <span class="method-start">199922 ms</span>
+                <span class="method-start">131819 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">acConfig</span>
-                <span class="method-start">202157 ms</span>
+                <span class="method-start">135200 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">contactsTests.EditContactTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">bcConfig</span>
-                <span class="method-start">202473 ms</span>
+                <span class="method-start">136234 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">bmConfig</span>
-                <span class="method-start">205192 ms</span>
+                <span class="method-start">139157 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">editCreatedContactWithRequiredDetails</span>
-                <span class="method-start">207883 ms</span>
+                <span class="method-start">142661 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">amConfig</span>
-                <span class="method-start">224534 ms</span>
+                <span class="method-start">158433 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">acConfig</span>
-                <span class="method-start">227844 ms</span>
+                <span class="method-start">162717 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">contactsTests.SearchContactTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">bcConfig</span>
-                <span class="method-start">228361 ms</span>
+                <span class="method-start">163828 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">bmConfig</span>
-                <span class="method-start">231202 ms</span>
+                <span class="method-start">167872 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">searchContact1</span>
-                <span class="method-start">233841 ms</span>
+                <span class="method-start">173609 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">amConfig</span>
-                <span class="method-start">241579 ms</span>
+                <span class="method-start">181948 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">bmConfig</span>
-                <span class="method-start">244003 ms</span>
+                <span class="method-start">184442 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">searchContact2</span>
-                <span class="method-start">247834 ms</span>
+                <span class="method-start">186703 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">amConfig</span>
-                <span class="method-start">257365 ms</span>
+                <span class="method-start">194865 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">acConfig</span>
-                <span class="method-start">259659 ms</span>
+                <span class="method-start">197763 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">contactsTests.CreateNewContactTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">afterSuite</span>
-                <span class="method-start">260600 ms</span>
+                <span class="method-start">198985 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
