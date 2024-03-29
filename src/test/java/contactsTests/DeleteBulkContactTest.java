@@ -12,12 +12,12 @@ import objectRepository.HomePage;
 public class DeleteBulkContactTest extends BaseClass{
 //	@Test(groups={"SmokeSuite","RegressionSuite"})
 //	public void deleteBulkContact1() throws Throwable{
-//		
+//
 //		//Read common data - Property file
 //		String SELECTLASTNAME=pUtil.readDataFromPropertyFile("selectlastname");
 //		//Read test data - Excel file
 //		String LASTNAME=eUtil.readDataFromExcelFile("Contacts", 10, 2);
-//		
+//
 //		//Step-3: Navigate to CONTACTS link
 //		HomePage hp=new HomePage(driver);
 //		hp.clickOnContactsLink();
@@ -47,12 +47,12 @@ public class DeleteBulkContactTest extends BaseClass{
 	@Test(groups={"SmokeSuite","RegressionSuite"})
 	public void deleteBulkContact2() throws Throwable
 	{
-		
+
 		//Read common data - Property file
 		String SELECTLASTNAME=pUtil.readDataFromPropertyFile("selectlastname");
 		//Read test data - Excel file
 		String LASTNAME=eUtil.readDataFromExcelFile("Contacts", 10, 3);
-		
+
 		//Step-3: Navigate to CONTACTS link
 		HomePage hp=new HomePage(driver);
 		hp.clickOnContactsLink();

@@ -18,9 +18,9 @@ public class CreateNewContactTest extends BaseClass{
 	public void createContactWithMandatoryDetails1()throws Throwable, IOException {
 		System.out.println("SCM Test");
 		//Read test data - Excel file
-		String LASTNAME=eUtil.readDataFromExcelFile("Contacts", 1, 2);	
-		
-		//Step-3: Navigate to CONTACTS link	
+		String LASTNAME=eUtil.readDataFromExcelFile("Contacts", 1, 2);
+
+		//Step-3: Navigate to CONTACTS link
 		HomePage hp=new HomePage(driver);
 		hp.clickOnContactsLink();
 		//Step-4: Click on create contact look up image
@@ -38,11 +38,11 @@ public class CreateNewContactTest extends BaseClass{
 		}
 	@Test(groups={"SmokeSuite","RegressionSuite"}, invocationCount=3)
 	public void createContactWithMandatoryDetails2()throws Throwable, IOException {
-		
+
 		//Read test data - Excel file
 		String LASTNAME=eUtil.readDataFromExcelFile("Contacts", 1, 3);
-		
-		//Step-3: Navigate to CONTACTS link	
+
+		//Step-3: Navigate to CONTACTS link
 		HomePage hp=new HomePage(driver);
 		hp.clickOnContactsLink();
 		//Step-4: Click on create contact look up image

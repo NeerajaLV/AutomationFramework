@@ -13,12 +13,12 @@ import objectRepository.HomePage;
 public class DeleteContactTest extends BaseClass{
 	@Test(groups={"SmokeSuite","RegressionSuite"})
 	public void  deleteCreatedContact1() throws Throwable {
-		
+
 		//Read common data - Property file
 		String SELECTLASTNAME=pUtil.readDataFromPropertyFile("selectlastname");
 		//Read test data - Excel file
 		String LASTNAME=eUtil.readDataFromExcelFile("Contacts", 7, 2);
-		
+
 		//Step-3: Navigate to CONTACTS link
 		HomePage hp=new HomePage(driver);
 		hp.clickOnContactsLink();
@@ -47,12 +47,12 @@ public class DeleteContactTest extends BaseClass{
 	}
 //	@Test(groups={"SmokeSuite","RegressionSuite"})
 //	public void  deleteCreatedContact2() throws Throwable {
-//		
+//
 //		//Read common data - Property file
 //		String SELECTLASTNAME=pUtil.readDataFromPropertyFile("selectlastname");
 //		//Read test data - Excel file
 //		String LASTNAME=eUtil.readDataFromExcelFile("Contacts", 7, 3);
-//		
+//
 //		//Step-3: Navigate to CONTACTS link
 //		HomePage hp=new HomePage(driver);
 //		hp.clickOnContactsLink();
@@ -75,7 +75,7 @@ public class DeleteContactTest extends BaseClass{
 //		//Step-8: Verify for contact deletion
 //		int afterConCount = cp.getContactCountSize()-1;
 //		System.out.println("Total contact count after search & deletion operation: "+afterConCount);
-//		Thread.sleep(2000);	
+//		Thread.sleep(2000);
 //		Assert.assertEquals(afterConCount, beforeConCount-1, "Delete operation failed on contact with lastname "+LASTNAME+"\n");
 //		System.out.println("Contact "+LASTNAME+" deleted successfully");
 //	}

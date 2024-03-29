@@ -12,12 +12,12 @@ import objectRepository.HomePage;
 public class SearchContactTest extends BaseClass{
 	@Test(groups={"SmokeSuite","RegressionSuite"})
 	public void searchContact1() throws Throwable{
-		
+
 		//Read common data - Property file
 		String SELECTLASTNAME=pUtil.readDataFromPropertyFile("selectlastname");
 		//Read test data - Excel file
 		String LASTNAME=eUtil.readDataFromExcelFile("Contacts", 13, 2);
-		
+
 		//Step-3: Navigate to CONTACTS link
 		HomePage hp=new HomePage(driver);
 		hp.clickOnContactsLink();
@@ -31,12 +31,12 @@ public class SearchContactTest extends BaseClass{
 	}
 	@Test(groups={"SmokeSuite","RegressionSuite"})
 	public void searchContact2() throws Throwable{
-		
+
 		//Read common data - Property file
 		String SELECTLASTNAME=pUtil.readDataFromPropertyFile("selectlastname");
 		//Read test data - Excel file
 		String LASTNAME=eUtil.readDataFromExcelFile("Contacts", 13, 3);
-		
+
 		//Step-3: Navigate to CONTACTS link
 		HomePage hp=new HomePage(driver);
 		hp.clickOnContactsLink();

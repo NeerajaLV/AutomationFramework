@@ -14,13 +14,13 @@ import objectRepository.HomePage;
 public class EditContactTest extends BaseClass {
 	@Test(groups={"SmokeSuite","RegressionSuite"})
 	public void editCreatedContactWithRequiredDetails() throws Throwable {
-		
+
 		//Read common data - Property file
 		String SELECTLASTNAME=pUtil.readDataFromPropertyFile("selectlastname");
 		//Read test data - Excel file
 		String BEFORELASTNAME=eUtil.readDataFromExcelFile("Contacts", 4, 2);
 		String AFTERLASTNAME=eUtil.readDataFromExcelFile("Contacts", 4, 3);
-		
+
 		//Step-3: Navigate to CONTACTS link
 		HomePage hp = new HomePage(driver);
 		hp.clickOnContactsLink();

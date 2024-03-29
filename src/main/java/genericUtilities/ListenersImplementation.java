@@ -91,7 +91,7 @@ public class ListenersImplementation implements ITestListener{
 		
 		report=new ExtentReports();
 		report.attachReporter(rep);
-		report.setSystemInfo("Base Browser", "Edge");
+		report.setSystemInfo("Base Browser", "Chrome");
 		report.setSystemInfo("Base Platform", "Testing");
 		report.setSystemInfo("Base OS", "Wndows 11");
 		report.setSystemInfo("Base URL", "http://localhost:8888/");
