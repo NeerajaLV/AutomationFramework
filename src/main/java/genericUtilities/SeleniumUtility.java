@@ -17,7 +17,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import com.google.common.io.Files;
 
 /**
- * This class consists of generic methods to use selenium webdriver utilities
+ * This class consists of generic methods to use selenium webdriver
  * @author neera
  */
 public class SeleniumUtility {
@@ -39,6 +39,14 @@ public class SeleniumUtility {
 	
 	//navigate methods
 	/**
+	 * This method will navigate to the URL
+	 * @param driver
+	 * @param url
+	 */
+	public void navigateTo(WebDriver driver, String url) {
+			driver.navigate().to(url);
+	}
+	/**
 	 * This method will refresh the current window
 	 * @param driver
 	 */
@@ -46,14 +54,14 @@ public class SeleniumUtility {
 			driver.navigate().refresh();
 	}
 	/**
-	 * This method will navigate to previous window
+	 * This method will navigate to backward window
 	 * @param driver
 	 */
 	public void navigateBack(WebDriver driver) {
 			driver.navigate().back();
 	}
 	/**
-	 * This method will navigate to previous window
+	 * This method will navigate to forward window
 	 * @param driver
 	 */
 	public void navigateForward(WebDriver driver) {
@@ -115,6 +123,7 @@ public class SeleniumUtility {
 		Select sel=new Select(element);
 		sel.selectByValue(value);
 	}
+	
 	//Handling Mouse Hover Actions
 	/**
 	 * This method will handle mouse hover action of moving to element
@@ -132,7 +141,7 @@ public class SeleniumUtility {
 	 */
 	public void handleMouseActionsMoveByOffset(WebDriver driver, int x, int y) {
 		Actions act=new Actions(driver);
-		act.moveByOffset(x, y);
+		act.moveByOffset(x, y).perform();
 	}
 	/**
 	 * This method will handle mouse hover action of clicking on element
@@ -181,6 +190,7 @@ public class SeleniumUtility {
 		Actions act=new Actions(driver);
 		act.clickAndHold(drag).release(drop).build().perform();
 	}
+	
 	//Handling Scroll Bar
 	/**
 	 * This method will handle scroll bar to element by x and y co-ordinates
@@ -190,7 +200,7 @@ public class SeleniumUtility {
 	 */
 	public void handleScrollBar(WebDriver driver, int x, int y) {
 		JavascriptExecutor js=(JavascriptExecutor)driver;
-		js.executeScript("window.scrollBy(x,y)");
+		js.executeScript("window.scrollBy(x,y)","");
 	}
 	/**
 	 * This method will handle scroll bar to window top
@@ -198,7 +208,7 @@ public class SeleniumUtility {
 	 */
 	public void handleScrollBarWindowTop(WebDriver driver) {
 		JavascriptExecutor js=(JavascriptExecutor)driver;
-		js.executeScript("window.scrollTo(0,document.scrollHeight");
+		js.executeScript("window.scrollTo(0,document.scrollHeight)","");
 	}
 	/**
 	 * This method will handle scroll bar to window bottom
@@ -206,7 +216,7 @@ public class SeleniumUtility {
 	 */
 	public void handleScrollBarWindowBottom(WebDriver driver) {
 		JavascriptExecutor js=(JavascriptExecutor)driver;
-		js.executeScript("window.scrollTo(0,-document.scrollHeight");
+		js.executeScript("window.scrollTo(0,-document.scrollHeight)","");
 	}
 	/**
 	 * This method will handle scroll bar to move to element
@@ -217,32 +227,49 @@ public class SeleniumUtility {
 		JavascriptExecutor js=(JavascriptExecutor)driver;
 		js.executeScript("arguments[0].scrollIntoView()",element);
 	}
-	//Handling Frames
+	
+	//Handling Frames PopUps
 	/**
 	 * This method will handle frame by index
 	 * @param driver
-	 * @param index
+	 * @param frameIndex
 	 */
-	public void handleFrame(WebDriver driver, int index) {
-		driver.switchTo().frame(index);
+	public void handleFrame(WebDriver driver, int frameIndex) {
+		driver.switchTo().frame(frameIndex);
 	}
 	/**
-	 * This method will handle frame by id
+	 * This method will handle frame by Name or Id
 	 * @param driver
-	 * @param index
+	 * @param frameNameorId
 	 */
-	public void handleFrame(WebDriver driver, String id) {
-		driver.switchTo().frame(id);
+	public void handleFrame(WebDriver driver, String frameNameorId) {
+		driver.switchTo().frame(frameNameorId);
 	}
 	/**
 	 * This method will handle frame by web element
 	 * @param driver
+	 * @param frameElement
+	 */
+	public void handleFrame(WebDriver driver, WebElement frameElement) {
+		driver.switchTo().frame(frameElement);
+	}
+	/**
+	 * This method will handle frame by switching to parent frame
+	 * @param driver
 	 * @param index
 	 */
-	public void handleFrame(WebDriver driver, WebElement element) {
-		driver.switchTo().frame(element);
+	public void handleFramePF(WebDriver driver) {
+		driver.switchTo().parentFrame();
 	}
-	//Handling Alert
+	/**
+	 * This method will handle frame by switching to main/first frame
+	 * @param driver
+	 * @param index
+	 */
+	public void handleFrameDC(WebDriver driver) {
+		driver.switchTo().defaultContent();
+	}
+	//Handling Alert PopUps
 	/**
 	 * This method will handle alert by clicking on ok
 	 * @param driver
@@ -265,17 +292,20 @@ public class SeleniumUtility {
 		driver.switchTo().alert().sendKeys(value);
 	}
 	/**
-	 * This method will handle alert by getting text
+	 * This method will handle alert by capturing alert text and return it to caller
 	 * @param driver
 	 */
 	public String handleAlertGetText(WebDriver driver) {
 		return driver.switchTo().alert().getText();
 	}
 	
-	//Handling Pop Ups
+	//Handling File Upload Pop Ups
+	//Handling Authentication Pop Ups
+	//Handling Windows Pop Ups
+	//Handling Browser-Native Pop Ups
 	//Screenshot
 	/**
-	 * This method will take screenshot of current window and returns path of the screenshot
+	 * This method will captures screenshot of current window and returns path of the screenshot
 	 * @param driver
 	 * @param screenshotName
 	 * @return
