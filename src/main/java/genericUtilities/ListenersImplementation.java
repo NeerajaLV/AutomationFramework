@@ -19,7 +19,7 @@ public class ListenersImplementation implements ITestListener{
 	@Override
 	public void onTestStart(ITestResult result) {
 		String methodName=result.getMethod().getMethodName();
-		System.out.println(methodName+"--- Test Start ---");
+		System.out.println(methodName+"--- Test execution STARTED ---");
 		
 		//create a test for @Test in extent reports
 		test = report.createTest(methodName);
@@ -28,19 +28,19 @@ public class ListenersImplementation implements ITestListener{
 	@Override
 	public void onTestSuccess(ITestResult result) {
 		String methodName=result.getMethod().getMethodName();
-		System.out.println(methodName+"--- Test Success ---");
+		System.out.println(methodName+"--- Test SUCCESS ---");
 		
 		//log the pass status in extent reports
-		test.log(Status.PASS, methodName+"--- Test Success ---");
+		test.log(Status.PASS, methodName+"--- Test SUCCESS ---");
 	}
 
 	@Override
 	public void onTestFailure(ITestResult result) {
 		String methodName=result.getMethod().getMethodName();
-		System.out.println(methodName+"--- Test Failure ---");
+		System.out.println(methodName+"--- Test FAILURE ---");
 		
 		//log the fail status in extent reports
-		test.log(Status.FAIL, methodName+"--- Test Failure ---");
+		test.log(Status.FAIL, methodName+"--- Test FAILURE ---");
 		
 		SeleniumUtility sUtil=new SeleniumUtility();
 		JavaUtility jUtil=new JavaUtility();
@@ -63,10 +63,10 @@ public class ListenersImplementation implements ITestListener{
 	@Override
 	public void onTestSkipped(ITestResult result) {
 		String methodName=result.getMethod().getMethodName();
-		System.out.println(methodName+"--- Test Skip ---");
+		System.out.println(methodName+"--- Test SKIP ---");
 		
 		//log the fail status in extent reports
-		test.log(Status.SKIP, methodName+"--- Test Failure ---");
+		test.log(Status.SKIP, methodName+"--- Test SKIP ---");
 	}
 
 	@Override

@@ -31,7 +31,7 @@ public class HomePage extends SeleniumUtility{
 		return SignOut;
 	}
 
-	//Business library - generic methods related to contacts module
+	//Business library - generic methods related to Home Page
 	/**
 	 * This method will click on contacts link
 	 */
