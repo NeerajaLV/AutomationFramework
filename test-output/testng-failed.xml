@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="practice.AssertionsPractice">
+      <class name="practice.DataProviderPractice">
         <methods>
-          <include name="softAssert"/>
+          <include name="loginToApp" invocation-numbers="0 1"/>
         </methods>
-      </class> <!-- practice.AssertionsPractice -->
+      </class> <!-- practice.DataProviderPractice -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
